@@ -2,7 +2,7 @@
 
 rm -rf ./dist
 
-mkdir .dist
+mkdir ./dist
 
 node-sass ./src/scss/main.scss > ./src/css/main.css
 
