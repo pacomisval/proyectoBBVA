@@ -1,0 +1,26 @@
+{
+  "name": "ejembbva",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "onchange": "^6.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "git": ".\\scripts\\git.sh",
+    "build": ".\\scripts\\build.sh",
+    "deploy": "npm run build && .\\scripts\\deploy.sh",
+    "serve": "onchange ./src/**/* -- npm run deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pacomisval/proyectoBBVA.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pacomisval/proyectoBBVA/issues"
+  },
+  "homepage": "https://github.com/pacomisval/proyectoBBVA#readme"
+}
