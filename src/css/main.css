@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+ @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Roboto'),
+        url(../fonts/Roboto-Regular.ttf) format('truetype');
+  } 
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto'),
+        url(../fonts/Roboto-Light.ttf) format('truetype');
+  }
+
+.page {
+    width: 100%;
+    margin: auto;
+}
+.container--news {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #eee;
+}
+.layout--news {
+    display: grid;
+    margin: 0 auto;
+    grid-gap: 20px;
+    grid-template-areas:
+        "panel--titulo panel--titulo panel--titulo"
+        "panel--imagen-big panel--imagen-left panel--imagen-left"
+        "panel--imagen-big panel--centro panel--derecha";
+
+    grid-template-rows: 80px 270px 430px;
+    grid-template-columns: 288px 289px 283px;
+
+}
+.panel__header {
+    grid-area: panel--titulo;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 1.3em;
+}
+.panel--imagen-big {
+    grid-area: panel--imagen-big;   
+}
+.panel--imagen-left {
+    grid-area: panel--imagen-left;  
+}
+.panel--centro {
+    grid-area: panel--centro;   
+}
+.panel--derecha {
+    grid-area: panel--derecha;   
+}
+.panel--imagen-big, .panel--imagen-left, .panel--centro, .panel--derecha {
+    
+    background-color: #fff;
+	box-shadow: 2px 2px 5px #bbb;
+}
+
+/* -------------------------------------------- */
+.panel--superior {
+    display: flex;
+}
+.panel--superior > .panel__texto {
+    width: 280px;
+    padding-right: 0;
+}
+.panel--superior > .panel__imagen {
+    width: 290px;
+} 
+
+/* -------------------------------------------- */
+.panel__texto {
+    display: grid;
+    height: 262px;
+    padding: 0 20px;
+
+    grid-template-areas: 
+        "panel__titulo"
+        "panel__parrafo"
+        "panel__link";
+
+    grid-template-rows: 70px 145px 45px;
+}
+.panel__titulo {
+    grid-area: panel__titulo;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+.panel__parrafo {
+    grid-area: panel__parrafo;
+}
+.panel__link {
+    grid-area: panel__link;
+}
+.panel__imagen {
+    grid-area: panel__imagen;
+}
+
+/* -------------------------------------- */
+
+.layout--client {
+    height: 80vh;
+    background-color: #fff;
+}
+
+/* -------------------------------------- */
+
+.layout--enjoy {
+    height: 100vh;
+    background-color:rgb(41, 97, 172)
+}
+
+/* -------------------------------------- */
+
+.layout--search {
+    height: 60vh;
+    background-color: #fff;
+}

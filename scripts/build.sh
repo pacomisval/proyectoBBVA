@@ -1,13 +1,16 @@
 #!/bin/bash
 
+# Eliminamos el directorio dist
 rm -rf ./dist
 
+# Creamos el directorio dist
 mkdir ./dist
 
-node-sass ./src/scss/main.scss > ./src/css/main.css
+# Copiamos todo el contenido de src en dist
+cp -r ./src/* ./dist
 
-cp -r ./src/index.html ./dist
+# Compilamos Sass en src y lo enviamos a dist
+node-sass ./src/scss/main.scss > ./dist/css/main.css
 
-cp -r ./src/css/main.css ./dist
-
-rm -rf ./src/scss/main.scss
+# Eliminamos el directorio scss de dist
+rm -rf ./dist/scss
