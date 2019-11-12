@@ -1,0 +1,42 @@
+// .c-enjoy {
+//     display: flex;
+//     height: 400px;
+    // background-color: $color-oscuro-d;
+
+        
+.c-enjoy {
+    display: flex;
+    //height: 370px;
+            
+
+    $colores-fondo: (claro, $color-oscuroC),
+    (oscuro, $color-oscuroB),
+    (mas-claro, $color-oscuroD),
+    (mas-oscuro, $color-oscuroA);
+
+
+    @each $nombre, $color in $colores-fondo { 
+        &--#{$nombre} {
+            background-color: $color; 
+        }
+    }
+
+    &__content {
+        color: $color-claro;
+        font-family: 'Roboto';
+        padding: 9rem 0 0 1.9rem;
+    }
+    &__title {               
+        font-size: 1.5rem;
+        padding-bottom: 1.3rem;
+    }
+    &__text {
+        line-height: 1.5rem;
+    }
+    &__img {
+        padding: 8rem 4.5rem 0 0;
+    }
+
+}
+       
+    

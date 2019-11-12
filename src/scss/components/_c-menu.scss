@@ -1,0 +1,18 @@
+.menu {
+    
+
+    &--principal {
+        display: flex;
+        //justify-content: space-between;
+
+        &__link {
+            color: white;
+            text-decoration: none;
+
+            &-last {
+                color: white;
+                margin-left: auto;
+            }
+        }
+    }
+}

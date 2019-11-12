@@ -1,0 +1,23 @@
+.l-menu {
+    display: grid;
+
+    grid-template-areas: 
+        "__logo __asistencia __login"
+        "__logo __servicios __servicios";
+
+        /* grid-template-rows: 50px 50px;
+        grid-template-columns: 100px 1500px; */
+
+        &__logo {
+            grid-area: __logo;
+        }
+        &__asistencia {
+            grid-area: __asistencia;
+        }
+        &__servicios {
+            grid-area: __servicios;
+        }
+        &__login {
+            grid-area: __login;
+        }
+}

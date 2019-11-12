@@ -1,0 +1,46 @@
+.c-news {
+    background-color: $color-claro;
+    margin-bottom: 60px;
+    box-shadow: 2px 2px 0 #ccc;
+    &__img {
+
+    }
+    &__content {
+        display: grid;
+        height: 222px;
+        padding: 0 20px;
+
+        grid-template-areas:
+            "__title"
+            "__text"
+            "__link";
+
+        grid-template-rows: 70px 105px 45px;
+
+    }
+    &__title {
+        grid-area: __title;
+    }
+    &__text {
+        grid-area: __text;
+    }
+    &__link {
+        grid-area: __link;
+    }
+
+    &--img-big {
+        
+    }
+    &--img-left {
+        display: flex;
+
+    }
+    &--center {
+    
+    }
+    &--right {
+        
+    }
+
+}
+

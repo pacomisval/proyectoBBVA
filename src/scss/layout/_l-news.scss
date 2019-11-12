@@ -1,0 +1,30 @@
+.l-news {
+    display: grid;
+    grid-gap: 20px;
+
+    grid-template-areas: 
+        "__area-left __area-up __area-up"
+        "__area-left __area-center __area-right";
+
+        grid-template-rows: 252px 430px;
+        grid-template-columns: 288px 289px 280px;
+
+    &__area-left {
+        grid-area: __area-left;
+
+    }
+    &__area-up {
+        grid-area: __area-up;
+
+    }
+    &__area-center {
+        grid-area: __area-center;
+
+    }
+    &__area-right {
+        grid-area: __area-right;
+        
+    }
+
+
+}
